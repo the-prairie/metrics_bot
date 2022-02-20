@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: open_data
+    database: '{{ env_var("LOAD_DATABASE") }}'
+    schema: open_data
+    loader: Manual
+    tags: ["open_data"]
+
+    loaded_at_field: _extracted_at
+
+    quoting:
+      database: true
+      schema: false
+      identifier: false
+
+
+
+    tables:
+      - name: yyj_building_permits
+        columns:
+          - name: attributes_objectid
+            tests:
+              - not_null
+    

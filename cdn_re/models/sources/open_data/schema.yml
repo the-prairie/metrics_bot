@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: open_data_yyj_building_permits_source
+    description: '{{ doc("open_data_yyj_building_permits_source") }}'
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: gis_link
+      - name: category
+      - name: type
+      - name: permit_type
+      - name: permit_subtype
+      - name: permit_no
+      - name: subject
+      - name: status
+      - name: purpose
+      - name: issued_on
+      - name: unit
+      - name: house_number
+      - name: street_name
+      - name: address
+      - name: completed_on
+      - name: created_on
+      - name: parcel_type
+      - name: auc
+      - name: actual_use
+      - name: neighbourhood
+      - name: geopoint
+      - name: longitude
+      - name: latitude
+      - name: contact_type
+      - name: contact_name
+      - name: contact_mailing_address
+      - name: contact_phone
+      - name: contact_cell
+      - name: contact_email
+      - name: contact_fax
+      - name: auc_group
+      - name: work_value
+      - name: _extracted_at
+      - name: days_to_approval
