@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: yyj_monthly_building_permits
+    description: #'{{ doc("yyj_building_permits_source") }}'
+    columns:
+      - name: issued_month
+        tests:
+          - not_null
+          - unique
+      - name: permits_requested
+      - name: average_days_to_approve
+      - name: average_cost_of_work

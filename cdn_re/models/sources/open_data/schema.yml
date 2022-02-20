@@ -8,6 +8,10 @@ models:
         tests:
           - not_null
           - unique
+        meta:
+          metrics:
+            total_permit_count:
+              type: "count_distinct"
       - name: gis_link
       - name: category
       - name: type
@@ -40,5 +44,9 @@ models:
       - name: contact_fax
       - name: auc_group
       - name: work_value
+        meta:
+          metrics:
+            total_work_value:
+              type: "sum"
       - name: _extracted_at
       - name: days_to_approval
