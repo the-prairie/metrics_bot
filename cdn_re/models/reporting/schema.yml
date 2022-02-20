@@ -6,7 +6,6 @@ models:
     columns:
       - name: issued_month
         tests:
-          - not_null
           - unique
       - name: permits_requested
       - name: average_days_to_approve
