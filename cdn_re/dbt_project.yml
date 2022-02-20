@@ -66,13 +66,26 @@ models:
     # ------------------
     # Common
     # ------------------
-    common:
-      +materialized: table
-      +schema: common
+    # common:
+    #   +materialized: table
+    #   +schema: common
 
-    common_prep:
+    # common_prep:
+    #   +materialized: table
+    #   +schema: common_prep
+
+    # ------------------
+    # Reporting
+    # ------------------
+    reporting:
+      +database: "{{ env_var('PROD_DATABASE') }}" #PROD
       +materialized: table
-      +schema: common_prep
+      +schema: reporting
+
+
+
+
+    
 
 
 

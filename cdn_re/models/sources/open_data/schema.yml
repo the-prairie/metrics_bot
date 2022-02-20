@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: open_data_yyj_building_permits_source
-    description: '{{ doc("open_data_yyj_building_permits_source") }}'
+  - name: yyj_building_permits_source
+    description: '{{ doc("yyj_building_permits_source") }}'
     columns:
       - name: id
         tests:
