@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: yyj_raw
-    database: "{{ env_var('PROJECT_ID') }}"
+    database: data-stack-338105
     schema: yyj_raw
     tables:
       - name: building_permits
