@@ -50,3 +50,7 @@ models:
               type: "sum"
       - name: _extracted_at
       - name: days_to_approval
+        meta:
+          metrics:
+            average_days_to_approval:
+              type: "average"
